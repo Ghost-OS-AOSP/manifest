@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="ghost"
+          fetch="https://github.com/Ghost-OS-AOSP"
+          revision="spooky" />
+
+
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="ghost" />
+  <project path="frameworks/base" name="frameworks_base" remote="ghost" />
+
+  <!-- General repos -->
+  <project path="art" name="art" remote="ghost" />
+  <project path="build/make" name="build" remote="ghost">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="ghost" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="ghost" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="ghost" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ghost" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="ghost" />
+
+  <!--External repos-->
+  <project name="external_jemalloc_new" path="external/jemalloc_new" remote="ghost" />
+
+</manifest>
