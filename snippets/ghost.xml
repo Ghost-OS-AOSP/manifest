@@ -26,6 +26,9 @@
   <project path="vendor/aosp" name="vendor_aosp" remote="ghost" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="ghost" />
 
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="ghost" />
+
   <!-- Packages repos -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ghost" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="ghost" />
