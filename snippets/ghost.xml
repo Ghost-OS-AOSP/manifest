@@ -24,6 +24,7 @@
   </project>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="ghost" />
   <project path="vendor/aosp" name="vendor_aosp" remote="ghost" />
+  <project path="vendor/support" name="vendor_support" remote="ghost" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="ghost" />
 
   <!-- Hardware -->
